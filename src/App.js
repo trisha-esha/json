@@ -28,6 +28,7 @@ function App() {
       }
       const data = await response.json();
       setCountryDetails(data[0]); 
+      setSearchTerm("");
     } catch (error) {
       setError("Country not found. Please try again.");
       setCountryDetails(null); 
